@@ -3,11 +3,10 @@ project:
 
 website:
   title: "mgimsattend"
-  navbar:
-    left:
+  sidebar:
+    contents:
       - href: index.qmd
         text: Home
-      - about.qmd
 
 format:
   html:
