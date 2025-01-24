@@ -1,0 +1,26 @@
+---
+title: "MGIMS Attendance"
+format: 
+  dashboard: 
+    #logo: "images/logo.png"
+    orientation: columns
+---
+```{r}
+#| echo: false
+#| include: false
+
+con <- DBI::dbConnect(
+    odbc::odbc(),
+    Driver = "PostgreSQL",
+    Server = Sys.getenv("db_server"),
+    Database = "postgres",
+    UID = Sys.getenv("db_uid"),
+    PWD = Sys.getenv("db_pwd"),
+    Port = 6543
+  )
+
+
+```
+## Column {width="35%"}
+
+## Column {width="65%"}

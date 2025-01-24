@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 .Renviron
+
+/_site/
+/.quarto/
+/.app.R/

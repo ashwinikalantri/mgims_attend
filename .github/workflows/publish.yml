@@ -34,5 +34,7 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          spotify_client: ${{ secrets.SP_CLIENT }}
-          spotify_secret: ${{ secrets.SP_SECRET }}
+          db_server: ${{ secrets.DB_SERVER }}
+          db_uid: ${{ secrets.DB_UID }}
+          db_pwd: ${{ secrets.DB_PWD }}
+          nmcapi: ${{ secrets.NMCAPI }}
