@@ -8,7 +8,16 @@ format:
 ```{r}
 #| echo: false
 #| include: false
-
+library(shiny)
+library(shinyWidgets)
+library(dplyr)
+library(gt)
+library(shinyjs)
+library(DBI)
+library(purrr)
+library(tidyr)
+library(stringr)
+library(lubridate)
 con <- DBI::dbConnect(
     odbc::odbc(),
     Driver = "PostgreSQL",
@@ -19,8 +28,16 @@ con <- DBI::dbConnect(
     Port = 6543
   )
 
-
 ```
+
 ## Column {width="35%"}
+
+```{r}
+pickerInput(
+    inputId = "somevalue",
+    label = "A label",
+    choices = c("a", "b")
+  )
+```
 
 ## Column {width="65%"}
