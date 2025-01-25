@@ -8,16 +8,16 @@ format:
 ```{r}
 #| echo: false
 #| include: false
-library(shiny)
-library(shinyWidgets)
+# library(shiny)
+# library(shinyWidgets)
 library(dplyr)
-library(gt)
-library(shinyjs)
-library(DBI)
-library(purrr)
-library(tidyr)
-library(stringr)
-library(lubridate)
+# library(gt)
+# library(shinyjs)
+# library(DBI)
+# library(purrr)
+# library(tidyr)
+# library(stringr)
+# library(lubridate)
 library(httr2)
 
 last_date <- as.Date(unlist(
