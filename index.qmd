@@ -50,3 +50,9 @@ print(last_date)
 ```
 
 ## Column {width="65%"}
+
+### Row {height="30%"}
+Row 1
+
+### Row {height="70%"}
+Row 2
