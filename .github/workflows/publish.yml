@@ -38,3 +38,6 @@ jobs:
           db_uid: ${{ secrets.DB_UID }}
           db_pwd: ${{ secrets.DB_PWD }}
           nmcapi: ${{ secrets.NMCAPI }}
+          db_url: ${{ secrets.DB_URL }}
+          apikey: ${{ secrets.APIKEY }}
+          servicekey: ${{ secrets.SERVICEKEY }}
