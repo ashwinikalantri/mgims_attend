@@ -10,7 +10,7 @@ website:
 
 format:
   html:
-    theme: [cosmo, custon.scss]
+    theme: cosmo
     toc: true
 
 
