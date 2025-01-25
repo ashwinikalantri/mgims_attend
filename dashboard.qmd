@@ -1,0 +1,39 @@
+---
+title: "MGIMS Attendance"
+format: 
+  dashboard:
+    orientation: columns
+---
+```{r}
+#| echo: false
+#| include: false
+library(dplyr)
+library(httr2)
+
+last_date <- as.Date(unlist(
+  request(
+    paste0(
+      "https://hocwxloxuwuvozbeyepc.supabase.co/rest/v1/",
+      "nmcatt_api_attend?select=log_date&order=log_date.desc&limit=1"
+    )
+  ) |>
+    req_headers(apikey = Sys.getenv("apikey")) |>
+    req_perform() |>
+    resp_body_json()
+))
+
+```
+
+## Column {width="35%"}
+
+```{r}
+print(last_date)
+```
+
+## Column {width="65%"}
+
+### Row {height="30%"}
+Row 1
+
+### Row {height="70%"}
+Row 2
